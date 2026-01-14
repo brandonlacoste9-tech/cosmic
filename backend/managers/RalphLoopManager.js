@@ -144,6 +144,37 @@ class RalphLoopManager {
     }
 
     // ═══════════════════════════════════════════════════════════════
+    // SCAN ONLY: Diagnosis without mutation
+    // ═══════════════════════════════════════════════════════════════
+    async scan(targetFile) {
+        console.log(`\n🔍 Ralph Loop SCAN initiated for: ${targetFile}`);
+        try {
+            const fullPath = path.join(PROJECT_ROOT, targetFile);
+            if (!fs.existsSync(fullPath)) {
+                return { error: `File not found: ${targetFile}` };
+            }
+
+            const content = fs.readFileSync(fullPath, 'utf-8');
+            const diagnosis = await DeepSeekAdvisor.diagnose({
+                targetFile: targetFile,
+                codeSnippet: content,
+                error: "Manual Scan Request" // Dummy error to trigger comprehensive check
+            });
+
+            return {
+                file: targetFile,
+                issues: diagnosis.fixPossible ? [{
+                    message: diagnosis.reasoning,
+                    fix: diagnosis.proposedFix
+                }] : []
+            };
+        } catch (e) {
+            console.error(`Scan failed: ${e.message}`);
+            return { error: e.message };
+        }
+    }
+
+    // ═══════════════════════════════════════════════════════════════
     // LINTER SENSATION: Catches undefined variables before runtime
     // ═══════════════════════════════════════════════════════════════
     async validateLogic(filePath) {

@@ -7,6 +7,7 @@ import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
 import Advisor from '../agents/Advisor.js';
+import RalphLoopManager from '../../backend/managers/RalphLoopManager.js';
 
 const execAsync = promisify(exec);
 
@@ -40,6 +41,21 @@ const ALLOWED_COMMANDS = {
   },
   status: () => {
     return `echo Battalion Status: Active [${new Date().toLocaleTimeString()}]`;
+  },
+  'devhound:scan': async (parameters) => {
+      const file = parameters?.file;
+      if (!file) throw new Error("Missing file parameter");
+      return await RalphLoopManager.scan(file);
+  },
+  'devhound:fix': async (parameters) => {
+      const file = parameters?.file;
+      if (!file) throw new Error("Missing file parameter");
+      // Trigger async fix loop
+      RalphLoopManager.startLoop({ 
+          type: 'manual_trigger', 
+          context: { targetFile: file } 
+      });
+      return { status: 'fix_initiated', file };
   }
 };
 
@@ -62,11 +78,19 @@ export async function runCommand(name, params = {}) {
   }
 
   // 3. Execution using verified command string
-  const cmd = ALLOWED_COMMANDS[name](params);
-  log(`[AppEnforcer] executing: ${cmd}`);
+  const cmdOrResult = await ALLOWED_COMMANDS[name](params);
+
+  // If result is NOT a string, it's a direct function return (RalphLoop)
+  if (typeof cmdOrResult !== 'string') {
+      log(`[AppEnforcer] Executed Internal Function: ${name}`);
+      return cmdOrResult;
+  }
+
+  // Shell Command Execution
+  log(`[AppEnforcer] executing: ${cmdOrResult}`);
 
   try {
-    const { stdout, stderr } = await execAsync(cmd, {
+    const { stdout, stderr } = await execAsync(cmdOrResult, {
       maxBuffer: 10 * 1024 * 1024,
     });
     return { stdout, stderr, exitCode: 0 };
