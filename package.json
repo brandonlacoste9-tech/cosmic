@@ -8,10 +8,11 @@
     "quantum-canvas/apps/quantum-canvas"
   ],
   "scripts": {
-    "start": "react-scripts start", 
-    "build": "tsc -p .", 
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "npm run dev --workspace=quantum-canvas-app",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "dev:extension": "npm run watch --workspace=devhound-vscode"
   },
   "dependencies": {
     "react": "^18.2.0",

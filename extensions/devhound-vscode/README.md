@@ -1,27 +1,30 @@
-# 🦮 DevHound for VS Code
+# DevHound VS Code Extension
 
-**Autonomous Code Repair Companion**
+> ⚡️ _“Inject commands into the 3‑D Cosmic world while you code.”_
 
-DevHound acts as a proactive "watchdog" for your code. It runs locally, identifying bugs, bad patterns, and potential runtime errors that standard linters miss—and offers one-click autonomous fixes.
+Part of the **Cosmic** monorepo.
 
-## ✨ Features
+## Quick Start
 
-- **🔍 Scan & Fix**: Hit `Ctrl+Alt+D` to scan the current file.
-- **🩺 Deep Diagnosis**: Identifies logical issues like `undefined` access, empty catch blocks, and loose equality.
-- **⚡ Autonomous Repair**: Select an issue and watch DevHound rewrite the code instantly.
-- **🔒 100% Local**: No code leaves your machine. Privacy-first design.
+1.  **Open in VS Code**:
+    ```bash
+    code .
+    ```
+2.  **Start Debugging**:
+    - Open `src/extension.ts`.
+    - Press **F5** (or Run > Start Debugging).
+    - Select "Run Extension" if prompted.
 
-## 🚀 Getting Started
+## Development
 
-1.  Open any JavaScript or TypeScript file.
-2.  Run Command: `DevHound: Scan & Fix Current File` (or click "DevHound" in the status bar).
-3.  Choose a fix from the dropdown.
+- **Build**: `npm run compile`
+- **Watch**: `npm run watch`
+- **Package**: `npx vsce package`
 
-## ⚙️ Configuration
+## Interaction
 
-- `devhound.autoFixOnSave`: Enable to automatically fix safe issues on save (Default: `false`).
+In the running Extension Host:
 
----
-
-**Built by Wiggum Labs**
-_Part of the Colony OS ecosystem._
+1.  Open the Command Palette (`Ctrl+Shift+P`).
+2.  Type `DevHound: Scan & Fix`.
+3.  Watch the DevHound Output channel or Status Bar.
