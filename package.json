@@ -2,6 +2,11 @@
   "name": "quantum-canvas",
   "version": "1.0.0",
   "private": true,
+  "workspaces": [
+    "extensions/*",
+    "backend",
+    "quantum-canvas"
+  ],
   "scripts": {
     "start": "react-scripts start", 
     "build": "tsc -p .", 

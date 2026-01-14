@@ -1,0 +1,77 @@
+{
+  "name": "devhound-vscode",
+  "displayName": "DevHound",
+  "description": "Autonomous Code Repair Companion. Scans your file and fixes issues locally.",
+  "version": "0.1.0",
+  "publisher": "WiggumLabs",
+  "icon": "images/icon.jpg",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Machine Learning",
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "devhound.scanFile",
+        "title": "DevHound: Scan & Fix Current File"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "devhound.scanFile",
+        "key": "ctrl+alt+d",
+        "mac": "cmd+alt+d"
+      }
+    ],
+    "configuration": {
+      "title": "DevHound",
+      "properties": {
+        "devhound.bridgeUrl": {
+          "type": "string",
+          "default": "http://localhost:4000",
+          "description": "URL for the Neural Bridge."
+        },
+        "devhound.bridgeSecret": {
+          "type": "string",
+          "default": "",
+          "description": "HMAC Secret for the Neural Bridge."
+        },
+        "devhound.autoFixOnSave": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically scan and fix files on save."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/glob": "^8.1.0",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "glob": "^8.1.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-electron": "^2.3.8"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0"
+  }
+}
