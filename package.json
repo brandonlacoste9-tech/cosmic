@@ -5,7 +5,7 @@
   "workspaces": [
     "extensions/*",
     "backend",
-    "quantum-canvas"
+    "quantum-canvas/apps/quantum-canvas"
   ],
   "scripts": {
     "start": "react-scripts start", 
