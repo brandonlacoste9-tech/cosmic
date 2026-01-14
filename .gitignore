@@ -1,0 +1,30 @@
+# Colony OS: Sovereign .gitignore
+
+# Environment Variables (CRITICAL - DO NOT REMOVE)
+.env
+.env.local
+.env.*.local
+
+# Sovereign Memory & State (Kept Local)
+.colony/
+*.db
+*.sqlite
+*.bak
+*.log
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build Outputs
+dist/
+build/
+coverage/
+
+# IDE & OS Noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+scratch/

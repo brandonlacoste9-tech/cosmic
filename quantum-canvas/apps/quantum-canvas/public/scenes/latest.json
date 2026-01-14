@@ -1,0 +1,1555 @@
+{
+  "metadata": {
+    "name": "AdGenAI Monolith Environment",
+    "version": "1.1.0",
+    "created": "2026-01-14T05:42:14.521Z"
+  },
+  "environment": {
+    "background": "#020205",
+    "ambientLight": {
+      "color": "#001133",
+      "intensity": 0.4
+    }
+  },
+  "scene": {
+    "objects": [
+      {
+        "id": "liquid_pool",
+        "name": "Liquid Data Pool",
+        "type": "mesh",
+        "geometry": "cylinder",
+        "material": {
+          "color": "#001122",
+          "emissive": "#004488",
+          "opacity": 0.8
+        },
+        "transform": {
+          "position": {
+            "x": 0,
+            "y": -2,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 15,
+            "y": 0.5,
+            "z": 15
+          }
+        }
+      },
+      {
+        "id": "monolith_core",
+        "name": "AdGenAI_Monolith",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffff",
+          "emissive": "#00ffff",
+          "opacity": 0.9
+        },
+        "transform": {
+          "position": {
+            "x": 0,
+            "y": 2,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0.2,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 6,
+            "z": 1.5
+          }
+        }
+      },
+      {
+        "id": "monolith_sphere",
+        "name": "Monolith Brain",
+        "type": "mesh",
+        "geometry": "sphere",
+        "material": {
+          "color": "#ff00ff",
+          "emissive": "#ff00ff",
+          "opacity": 1
+        },
+        "transform": {
+          "position": {
+            "x": 0,
+            "y": 5.5,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        }
+      },
+      {
+        "id": "shard_0",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 5.010788886206664,
+            "y": 1.214776000915034,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0.8521470449387396,
+            "y": 0.11251242113362048,
+            "z": 0.21350573760718317,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_1",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 7.894799374974304,
+            "y": 1.017549476212061,
+            "z": 0.9973450979972271
+          },
+          "rotation": {
+            "x": 0.2842206818593701,
+            "y": 0.6797943938593455,
+            "z": 0.9982569335408716,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_2",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 6.105369414944401,
+            "y": 1.963683557081274,
+            "z": 1.567592429681562
+          },
+          "rotation": {
+            "x": 0.9262700064175453,
+            "y": 0.3597061407175357,
+            "z": 0.9281206562531872,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_3",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 5.252779204857586,
+            "y": 4.10368586481852,
+            "z": 2.0797224112333415
+          },
+          "rotation": {
+            "x": 0.47262794818967724,
+            "y": 0.5150284929682266,
+            "z": 0.11816607667163526,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_4",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 6.416654334090516,
+            "y": 1.5047159419387743,
+            "z": 3.527585571679163
+          },
+          "rotation": {
+            "x": 0.4408945870478507,
+            "y": 0.6810458546266507,
+            "z": 0.10192582223830149,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_5",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 5.059520161779665,
+            "y": 3.8587835384954237,
+            "z": 3.6759565688334903
+          },
+          "rotation": {
+            "x": 0.7361794822951914,
+            "y": 0.2500450849662499,
+            "z": 0.21699998340324034,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_6",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 4.452517331903278,
+            "y": -0.10641433535566058,
+            "z": 4.181192082892907
+          },
+          "rotation": {
+            "x": 0.539811724146627,
+            "y": 0.9092741333136718,
+            "z": 0.5579681303968865,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_7",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 5.014355684296877,
+            "y": 1.0402149035061143,
+            "z": 6.061314793411007
+          },
+          "rotation": {
+            "x": 0.7302535890495574,
+            "y": 0.2944660962660347,
+            "z": 0.10368584613133036,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_8",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 4.26474587104045,
+            "y": 4.342629210990441,
+            "z": 6.720164179602131
+          },
+          "rotation": {
+            "x": 0.31721631356541236,
+            "y": 0.8642899317284732,
+            "z": 0.32027016465590885,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_9",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 2.2857117528639432,
+            "y": 4.554851035312591,
+            "z": 4.857384727492642
+          },
+          "rotation": {
+            "x": 0.15619740894283585,
+            "y": 0.5976980123661891,
+            "z": 0.08733185038192215,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_10",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 1.850524788937723,
+            "y": 2.3459232805907564,
+            "z": 5.69532967804834
+          },
+          "rotation": {
+            "x": 0.8905082016174304,
+            "y": 0.21102742629578564,
+            "z": 0.10462830178810845,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_11",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 1.000361992261056,
+            "y": 2.8842217724500894,
+            "z": 5.244081211000571
+          },
+          "rotation": {
+            "x": 0.9016992298608607,
+            "y": 0.7799834631206543,
+            "z": 0.005553737317011587,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_12",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 0.334989307052624,
+            "y": 0.23636185724350978,
+            "z": 5.324502563163282
+          },
+          "rotation": {
+            "x": 0.34814327270117307,
+            "y": 0.9537108661496025,
+            "z": 0.501909127429762,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_13",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -0.32580235109983585,
+            "y": 0.04595117861100517,
+            "z": 5.178480079793087
+          },
+          "rotation": {
+            "x": 0.035750294855030895,
+            "y": 0.7397481915073518,
+            "z": 0.23016030279790045,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_14",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -1.1092354180094899,
+            "y": -0.8842548568313386,
+            "z": 5.814815695878552
+          },
+          "rotation": {
+            "x": 0.4768990504606899,
+            "y": 0.8141430237112863,
+            "z": 0.809494184924837,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_15",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -2.0752589791847216,
+            "y": -0.6216480951681937,
+            "z": 6.386990395611942
+          },
+          "rotation": {
+            "x": 0.8292104406362599,
+            "y": 0.3271443358906304,
+            "z": 0.9238316321150303,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_16",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -2.589972398943996,
+            "y": 1.5422169173822389,
+            "z": 5.503971513247452
+          },
+          "rotation": {
+            "x": 0.3697900095523231,
+            "y": 0.27163296534288106,
+            "z": 0.28692726154837855,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_17",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -3.0195345193499423,
+            "y": 0.08293460716918699,
+            "z": 4.7580250569671385
+          },
+          "rotation": {
+            "x": 0.6981088717987769,
+            "y": 0.07156247590761577,
+            "z": 0.42773530511288727,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_18",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -3.559155108982382,
+            "y": 3.2677556863507236,
+            "z": 4.302279469659181
+          },
+          "rotation": {
+            "x": 0.1492756167134941,
+            "y": 0.34649381440647964,
+            "z": 0.018983659496594196,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_19",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -4.520288008303946,
+            "y": 0.6338702339651057,
+            "z": 4.244832984094667
+          },
+          "rotation": {
+            "x": 0.7021895125767722,
+            "y": 0.4768366275330136,
+            "z": 0.8806481550583002,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_20",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -5.284401103528953,
+            "y": 4.477086930936793,
+            "z": 3.839342136752246
+          },
+          "rotation": {
+            "x": 0.44020439485215,
+            "y": 0.43400656716056796,
+            "z": 0.027130496382995806,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_21",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -6.537049819404813,
+            "y": 0.9999033275607858,
+            "z": 3.5937735498337062
+          },
+          "rotation": {
+            "x": 0.16049214342742868,
+            "y": 0.6572577748455747,
+            "z": 0.19714685677262678,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_22",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -6.312774090708357,
+            "y": 0.8572465645699725,
+            "z": 2.499404075724007
+          },
+          "rotation": {
+            "x": 0.5310012476479835,
+            "y": 0.6146358649876158,
+            "z": 0.707259856036232,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_23",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -7.598316764441997,
+            "y": -0.5486798308160874,
+            "z": 1.9509161573592095
+          },
+          "rotation": {
+            "x": 0.10430204644838292,
+            "y": 0.524943060970548,
+            "z": 0.22158451583652483,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_24",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -5.558573267019754,
+            "y": 4.409471220634703,
+            "z": 0.70221110586976
+          },
+          "rotation": {
+            "x": 0.3108062270077391,
+            "y": 0.670309664106926,
+            "z": 0.5670402595431764,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_25",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -6.729871270960219,
+            "y": 4.631465875396961,
+            "z": 8.241715310655162e-16
+          },
+          "rotation": {
+            "x": 0.09858041764462344,
+            "y": 0.8973321584603048,
+            "z": 0.06964594561717086,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_26",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -6.154239266774595,
+            "y": 1.3442557402304816,
+            "z": -0.7774612213802673
+          },
+          "rotation": {
+            "x": 0.520762149241671,
+            "y": 0.6413631762356797,
+            "z": 0.09522285731575708,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_27",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -5.6013650217847655,
+            "y": -0.07060206749698228,
+            "z": -1.4381860960845505
+          },
+          "rotation": {
+            "x": 0.5287133316443149,
+            "y": 0.2466531544245666,
+            "z": 0.057329501403853844,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_28",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -6.036896316087149,
+            "y": 4.723366634885281,
+            "z": -2.3901763377466865
+          },
+          "rotation": {
+            "x": 0.13530333803403005,
+            "y": 0.13695525639608475,
+            "z": 0.8551231451658325,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_29",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -6.306712424337448,
+            "y": 1.0378996489163392,
+            "z": -3.467144495321453
+          },
+          "rotation": {
+            "x": 0.5866610387544767,
+            "y": 0.9764048127288776,
+            "z": 0.5867483587641448,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_30",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -6.43226714782112,
+            "y": 4.801041319464552,
+            "z": -4.673315634383788
+          },
+          "rotation": {
+            "x": 0.9037593505734649,
+            "y": 0.9062839713226599,
+            "z": 0.3746846098032326,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_31",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -5.775654388673009,
+            "y": 0.7330996528316949,
+            "z": -5.423700482963072
+          },
+          "rotation": {
+            "x": 0.508057617838215,
+            "y": 0.2617103499889557,
+            "z": 0.481305805896855,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_32",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -4.6015778700815355,
+            "y": -0.3895128768433471,
+            "z": -5.562352129168705
+          },
+          "rotation": {
+            "x": 0.2880380074128279,
+            "y": 0.8305448923169978,
+            "z": 0.07659000843959096,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_33",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -3.041384888463753,
+            "y": 4.136330801210992,
+            "z": -4.792455729337758
+          },
+          "rotation": {
+            "x": 0.906570081836161,
+            "y": 0.5185964964042797,
+            "z": 0.10123067592975477,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_34",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -2.925478169859493,
+            "y": 0.3872318793989924,
+            "z": -6.216957569161393
+          },
+          "rotation": {
+            "x": 0.8390746649100994,
+            "y": 0.7870180776948182,
+            "z": 0.11531245810793145,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_35",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -2.204931041118092,
+            "y": 2.587054871244759,
+            "z": -6.78607996585584
+          },
+          "rotation": {
+            "x": 0.2690592314380623,
+            "y": 0.1204634621899161,
+            "z": 0.8647459183856743,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_36",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -1.2404671819570658,
+            "y": 3.012682666090397,
+            "z": -6.502756694165062
+          },
+          "rotation": {
+            "x": 0.48569075640783044,
+            "y": 0.847562797182952,
+            "z": 0.5588736737805715,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_37",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": -0.4828475647401768,
+            "y": 2.1963361882336097,
+            "z": -7.674642270513917
+          },
+          "rotation": {
+            "x": 0.7763545118949732,
+            "y": 0.9164300729838041,
+            "z": 0.6271922051305351,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_38",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 0.4807267634539813,
+            "y": 2.2157703352568037,
+            "z": -7.6409330993656
+          },
+          "rotation": {
+            "x": 0.9187504623605182,
+            "y": 0.6595213678074334,
+            "z": 0.6662235154815374,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_39",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 1.0606690071328353,
+            "y": 4.030380917077975,
+            "z": -5.560221654187376
+          },
+          "rotation": {
+            "x": 0.2677433092449695,
+            "y": 0.5004029358712997,
+            "z": 0.8505060808567828,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_40",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 2.045553975319353,
+            "y": 1.2914370511769893,
+            "z": -6.295567794243771
+          },
+          "rotation": {
+            "x": 0.9406455882006816,
+            "y": 0.9658310889685718,
+            "z": 0.8601329157813403,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_41",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 2.360015732746788,
+            "y": 3.5673586300063773,
+            "z": -5.015288722439796
+          },
+          "rotation": {
+            "x": 0.7271293805298789,
+            "y": 0.5340256617914853,
+            "z": 0.28589206730408145,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_42",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 3.602594093950916,
+            "y": 4.352635795967576,
+            "z": -5.6767799338788665
+          },
+          "rotation": {
+            "x": 0.044812141002833705,
+            "y": 0.5403411860069962,
+            "z": 0.5354186334778929,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_43",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 3.4202383931230895,
+            "y": -0.426118452999555,
+            "z": -4.134358006184448
+          },
+          "rotation": {
+            "x": 0.1757647002668592,
+            "y": 0.3711154961562061,
+            "z": 0.530463809241656,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_44",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 4.370751903518207,
+            "y": 3.882417211476968,
+            "z": -4.104409234824386
+          },
+          "rotation": {
+            "x": 0.18677850601729173,
+            "y": 0.0410972782494059,
+            "z": 0.5389149992909757,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_45",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 4.788250595945138,
+            "y": 4.326006753376077,
+            "z": -3.4788676927011584
+          },
+          "rotation": {
+            "x": 0.4764678276344435,
+            "y": 0.02483756682424343,
+            "z": 0.4670900144574497,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_46",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 5.958707764956739,
+            "y": 0.32504904613031504,
+            "z": -3.275827314842151
+          },
+          "rotation": {
+            "x": 0.8405557229175575,
+            "y": 0.4554945953359888,
+            "z": 0.3836266703454613,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_47",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 4.769178379160766,
+            "y": 1.0157482006870855,
+            "z": -1.8882512992622702
+          },
+          "rotation": {
+            "x": 0.3549789226762161,
+            "y": 0.6840534972736328,
+            "z": 0.5489303438354187,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_48",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 6.153291086695402,
+            "y": -0.45039183498051916,
+            "z": -1.5798966237030896
+          },
+          "rotation": {
+            "x": 0.8600092791759267,
+            "y": 0.08783398435948087,
+            "z": 0.29179042619849505,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      },
+      {
+        "id": "shard_49",
+        "name": "Data Shard",
+        "type": "mesh",
+        "geometry": "box",
+        "material": {
+          "color": "#00ffaa",
+          "emissive": "#00ffaa",
+          "opacity": 0.7
+        },
+        "transform": {
+          "position": {
+            "x": 7.088132720325636,
+            "y": 2.439865421131998,
+            "z": -0.8954394009022625
+          },
+          "rotation": {
+            "x": 0.14891362290112797,
+            "y": 0.5808253439228607,
+            "z": 0.5252735860845047,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        }
+      }
+    ]
+  }
+}
