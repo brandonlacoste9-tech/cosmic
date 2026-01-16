@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ctx-tracker"
+version = "0.1.0"
+description = "Working context tracker - remember what you were doing"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Name", email = "you@example.com"}
+]
+keywords = ["productivity", "git", "context", "developer-tools"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development",
+]
+dependencies = [
+    "watchdog>=3.0",
+]
+
+[project.scripts]
+ctx = "ctx.cli:main"
+ctx-track = "ctx.tracker:run_tracker"
+ctx-log-command = "ctx.commands:main"
+
+[project.urls]
+Homepage = "https://github.com/yourusername/ctx"
+Repository = "https://github.com/yourusername/ctx"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ctx*"]
+
+[tool.setuptools.package-data]
+ctx = ["py.typed"]
